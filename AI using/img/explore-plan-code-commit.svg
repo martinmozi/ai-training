@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#475569"/>
+    </marker>
+  </defs>
+  <style>
+    .title { font-size:20px; font-weight:600; fill:#0f172a; }
+    .h { font-size:16px; font-weight:700; fill:#0f172a; }
+    .small { font-size:12px; fill:#334155; }
+    .ln { stroke:#475569; stroke-width:1.8; fill:none; marker-end:url(#a); }
+  </style>
+  <text x="450" y="32" text-anchor="middle" class="title">Explore → Plan → Code (+Verify) → Commit</text>
+
+  <g>
+    <rect x="30"  y="60" width="190" height="130" rx="12" fill="#e0f2fe" stroke="#0369a1"/>
+    <text x="125" y="88" text-anchor="middle" class="h">Explore</text>
+    <text x="125" y="112" text-anchor="middle" class="small">„nič ešte nepíš“</text>
+    <text x="125" y="130" text-anchor="middle" class="small">grep, cielené čítanie</text>
+    <text x="125" y="148" text-anchor="middle" class="small">subagent na prieskum</text>
+    <text x="125" y="166" text-anchor="middle" class="small">plan mode / read-only</text>
+
+    <rect x="250" y="60" width="190" height="130" rx="12" fill="#ede9fe" stroke="#6d28d9"/>
+    <text x="345" y="88" text-anchor="middle" class="h">Plan</text>
+    <text x="345" y="112" text-anchor="middle" class="small">plán do súboru / issue</text>
+    <text x="345" y="130" text-anchor="middle" class="small">človek ho reviduje</text>
+    <text x="345" y="148" text-anchor="middle" class="small">definuj „hotovo“</text>
+    <text x="345" y="166" text-anchor="middle" class="small">→ najlacnejšia oprava</text>
+
+    <rect x="470" y="60" width="190" height="130" rx="12" fill="#dcfce7" stroke="#15803d"/>
+    <text x="565" y="88" text-anchor="middle" class="h">Code + Verify</text>
+    <text x="565" y="112" text-anchor="middle" class="small">najprv test (TDD)</text>
+    <text x="565" y="130" text-anchor="middle" class="small">malé kroky</text>
+    <text x="565" y="148" text-anchor="middle" class="small">testy / build / screenshot</text>
+    <text x="565" y="166" text-anchor="middle" class="small">agent si overí sám</text>
+
+    <rect x="690" y="60" width="180" height="130" rx="12" fill="#fef3c7" stroke="#b45309"/>
+    <text x="780" y="88" text-anchor="middle" class="h">Commit</text>
+    <text x="780" y="112" text-anchor="middle" class="small">malý, atomický commit</text>
+    <text x="780" y="130" text-anchor="middle" class="small">PR + review</text>
+    <text x="780" y="148" text-anchor="middle" class="small">poučenie → CLAUDE.md</text>
+    <text x="780" y="166" text-anchor="middle" class="small">/clear</text>
+
+    <path d="M220,125 L248,125" class="ln"/>
+    <path d="M440,125 L468,125" class="ln"/>
+    <path d="M660,125 L688,125" class="ln"/>
+    <path d="M565,190 C565,240 345,240 345,192" class="ln"/>
+    <text x="455" y="248" text-anchor="middle" class="small">verifikácia zlyhala zásadne → späť do plánu, nie „skús ešte raz“</text>
+  </g>
+</svg>

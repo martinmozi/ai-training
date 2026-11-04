@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" width="780" height="300" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <rect width="780" height="300" fill="#ffffff"/>
+  <text x="20" y="24" font-weight="bold" font-size="14">Brachistochróna (1696): po ktorej krivke zíde guľôčka z P do Q najrýchlejšie?</text>
+
+  <!-- priamka -->
+  <line x1="60" y1="60" x2="420" y2="185" stroke="#9ca3af" stroke-width="2" stroke-dasharray="6 4"/>
+  <!-- cykloida -->
+  <path d="M60.0,60.0 L60.0,60.7 L60.2,62.7 L60.8,66.0 L61.9,70.5 L63.7,76.2 L66.3,83.0 L69.8,90.6 L74.5,99.1 L80.3,108.3 L87.4,117.9 L95.7,127.8 L105.5,137.9 L116.5,147.9 L128.9,157.8 L142.6,167.2 L157.5,176.1 L173.5,184.2 L190.5,191.5 L208.5,197.8 L227.3,203.0 L246.6,207.0 L266.4,209.8 L286.5,211.2 L306.7,211.3 L326.8,210.0 L346.6,207.4 L366.0,203.6 L384.8,198.5 L402.9,192.4 L420.1,185.2" fill="none" stroke="#dc2626" stroke-width="3"/>
+
+  <circle cx="60" cy="60" r="5" fill="#111"/>
+  <circle cx="420" cy="185" r="5" fill="#111"/>
+  <text x="45" y="55" font-weight="bold">P</text>
+  <text x="430" y="182" font-weight="bold">Q</text>
+  <circle cx="74.5" cy="99.1" r="7" fill="#fbbf24" stroke="#92400e"/>
+
+  <text x="240" y="108" fill="#6b7280" transform="rotate(19 240 108)">priamka – najkratšia, nie najrýchlejšia</text>
+  <text x="200" y="236" fill="#dc2626" font-weight="bold">cykloida – asi o 28 % rýchlejšia</text>
+  <text x="200" y="254" fill="#dc2626" font-size="12">(najprv strmo naberie rýchlosť, potom ju využije)</text>
+
+  <!-- co z toho vzniklo -->
+  <rect x="490" y="50" width="270" height="215" rx="8" fill="#f0fdf4" stroke="#16a34a"/>
+  <text x="505" y="74" font-weight="bold">Čo vzniklo pri hľadaní riešenia</text>
+  <g font-size="12">
+    <text x="505" y="100">Hľadá sa celá <tspan font-weight="bold">funkcia</tspan>, nie číslo</text>
+    <text x="505" y="122">↓ variačný počet (Euler, Lagrange)</text>
+    <text x="505" y="144">↓ Euler–Lagrangeova rovnica</text>
+    <text x="505" y="166">↓ lagrangeovská mechanika</text>
+    <text x="505" y="188">↓ princíp najmenšieho účinku</text>
+    <text x="505" y="210">↓ kvantová fyzika (Feynman),</text>
+    <text x="518" y="228">teória riadenia, optimalizácia</text>
+    <text x="505" y="252" fill="#555">Odpoveď „cykloida“ je len vedľajší produkt.</text>
+  </g>
+</svg>

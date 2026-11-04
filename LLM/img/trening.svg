@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 440" width="780" height="440" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <marker id="ao" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e07a1f"/>
+    </marker>
+  </defs>
+  <rect width="780" height="440" fill="#ffffff"/>
+  <text x="20" y="24" font-weight="bold" font-size="14">Tréning: celý text naraz, každá pozícia predpovedá nasledujúci token</text>
+
+  <text x="20" y="62" fill="#555">vstup</text>
+  <g>
+    <rect x="130" y="44" width="90" height="28" rx="5" fill="#eeeeee" stroke="#999"/>
+    <rect x="235" y="44" width="90" height="28" rx="5" fill="#eeeeee" stroke="#999"/>
+    <rect x="340" y="44" width="90" height="28" rx="5" fill="#eeeeee" stroke="#999"/>
+    <rect x="445" y="44" width="90" height="28" rx="5" fill="#eeeeee" stroke="#999"/>
+    <rect x="550" y="44" width="90" height="28" rx="5" fill="#eeeeee" stroke="#999"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="175" y="63">Mačka</text><text x="280" y="63">sedí</text><text x="385" y="63">na</text><text x="490" y="63">stole</text><text x="595" y="63">.</text>
+  </g>
+
+  <rect x="120" y="86" width="530" height="36" rx="6" fill="#fde7d4" stroke="#e07a1f" stroke-width="1.5"/>
+  <text x="385" y="109" text-anchor="middle" font-weight="bold">Model (32 blokov, kauzálna maska)</text>
+
+  <text x="20" y="157" fill="#555">správny ďalší</text>
+  <text x="20" y="172" fill="#555">token (cieľ)</text>
+  <g>
+    <rect x="130" y="140" width="90" height="28" rx="5" fill="#dcfce7" stroke="#16a34a"/>
+    <rect x="235" y="140" width="90" height="28" rx="5" fill="#dcfce7" stroke="#16a34a"/>
+    <rect x="340" y="140" width="90" height="28" rx="5" fill="#dcfce7" stroke="#16a34a"/>
+    <rect x="445" y="140" width="90" height="28" rx="5" fill="#dcfce7" stroke="#16a34a"/>
+    <rect x="550" y="140" width="90" height="28" rx="5" fill="#dcfce7" stroke="#16a34a"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="175" y="159">sedí</text><text x="280" y="159">na</text><text x="385" y="159">stole</text><text x="490" y="159">.</text><text x="595" y="159">&lt;koniec&gt;</text>
+  </g>
+
+  <text x="20" y="200" fill="#555">P(cieľ) podľa</text>
+  <text x="20" y="215" fill="#555">modelu</text>
+  <g text-anchor="middle" fill="#2563eb">
+    <text x="175" y="206">12 %</text><text x="280" y="206">40 %</text><text x="385" y="206">41 %</text><text x="490" y="206">35 %</text><text x="595" y="206">60 %</text>
+  </g>
+
+  <rect x="130" y="228" width="510" height="34" rx="6" fill="#eeeeee" stroke="#999"/>
+  <text x="385" y="250" text-anchor="middle">chyba (loss) = priemer z −log P(cieľ) cez všetky pozície</text>
+
+  <path d="M640,245 L700,245 L700,104 L654,104" fill="none" stroke="#e07a1f" stroke-width="2" marker-end="url(#ao)"/>
+  <text x="708" y="166" fill="#c2410c" font-size="12">spätné</text>
+  <text x="708" y="181" fill="#c2410c" font-size="12">šírenie:</text>
+  <text x="708" y="196" fill="#c2410c" font-size="12">úprava</text>
+  <text x="708" y="211" fill="#c2410c" font-size="12">váh</text>
+
+  <text x="20" y="284" font-size="12" fill="#444">Opakuje sa státisíce krokov na dávkach (batch) textov. Každý krok posunie všetky váhy trochu tak,</text>
+  <text x="20" y="300" font-size="12" fill="#444">aby P(cieľ) nabudúce bolo vyššie.</text>
+
+  <!-- inferencia -->
+  <text x="20" y="328" font-weight="bold" font-size="14">Inferencia: po jednom tokene, každý nový sa pridá na vstup</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="13">
+    <text x="40" y="358">Mačka sedí na</text>
+    <text x="40" y="384">Mačka sedí na stole</text>
+    <text x="40" y="410">Mačka sedí na stole .</text>
+  </g>
+  <g stroke="#555" marker-end="url(#a)">
+    <line x1="250" y1="354" x2="290" y2="354"/>
+    <line x1="250" y1="380" x2="290" y2="380"/>
+    <line x1="250" y1="406" x2="290" y2="406"/>
+  </g>
+  <g font-weight="bold" fill="#2563eb">
+    <text x="300" y="358">stole</text>
+    <text x="300" y="384">.</text>
+    <text x="300" y="410">&lt;koniec&gt; → stop</text>
+  </g>
+  <text x="440" y="370" font-size="12" fill="#555">Pri tréningu sú všetky správne tokeny</text>
+  <text x="440" y="386" font-size="12" fill="#555">známe vopred, preto ide všetko naraz.</text>
+  <text x="440" y="402" font-size="12" fill="#555">Pri inferencii ďalší token ešte neexistuje.</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="780" height="330" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <rect width="780" height="330" fill="#ffffff"/>
+  <text x="20" y="24" font-weight="bold" font-size="14">Instruct tréning (SFT): model vidí celý text, ale učí sa iba z odpovede</text>
+
+  <text x="20" y="66" fill="#555">vstup</text>
+  <rect x="90" y="46" width="70" height="32" rx="4" fill="#eeeeee" stroke="#999"/>
+  <rect x="160" y="46" width="220" height="32" rx="4" fill="#eeeeee" stroke="#999"/>
+  <rect x="380" y="46" width="100" height="32" rx="4" fill="#eeeeee" stroke="#999"/>
+  <rect x="480" y="46" width="200" height="32" rx="4" fill="#fde7d4" stroke="#e07a1f" stroke-width="1.5"/>
+  <rect x="680" y="46" width="70" height="32" rx="4" fill="#fde7d4" stroke="#e07a1f" stroke-width="1.5"/>
+  <g text-anchor="middle" font-size="12">
+    <text x="125" y="67" font-family="Menlo, Consolas, monospace">&lt;|user|&gt;</text>
+    <text x="270" y="67">Aké je hlavné mesto Slovenska?</text>
+    <text x="430" y="67" font-family="Menlo, Consolas, monospace">&lt;|assistant|&gt;</text>
+    <text x="580" y="67">Hlavné mesto je Bratislava.</text>
+    <text x="715" y="67" font-family="Menlo, Consolas, monospace">&lt;eos&gt;</text>
+  </g>
+
+  <text x="20" y="110" fill="#555">loss maska</text>
+  <rect x="90" y="92" width="390" height="28" rx="4" fill="#f3f4f6" stroke="#bbb"/>
+  <text x="285" y="111" text-anchor="middle" fill="#666">0 – chyba sa nepočíta (model to len číta)</text>
+  <rect x="480" y="92" width="270" height="28" rx="4" fill="#fde7d4" stroke="#e07a1f"/>
+  <text x="615" y="111" text-anchor="middle" fill="#9a3412" font-weight="bold">1 – chyba sa počíta</text>
+
+  <text x="20" y="160">• Attention vidí celý text, takže odpoveď môže závisieť od otázky.</text>
+  <text x="20" y="182">• Chyba sa počíta iba na tokenoch odpovede. Model sa učí odpovedať, nie písať otázky používateľov.</text>
+  <text x="20" y="204">• Token &lt;eos&gt; v odpovedi naučí model, kedy má prestať písať.</text>
+  <text x="20" y="226">• Špeciálne tokeny (&lt;|user|&gt;, &lt;|assistant|&gt;) označujú, kto hovorí. Ich presná podoba sa líši podľa modelu.</text>
+
+  <rect x="20" y="250" width="740" height="62" rx="6" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="34" y="272" font-weight="bold" fill="#991b1b">Base model na ten istý vstup (bez instruct tréningu) len dopĺňa text:</text>
+  <text x="34" y="296" font-family="Menlo, Consolas, monospace" font-size="12">Aké je hlavné mesto Slovenska? Aké je hlavné mesto Česka? Aké je hlavné mesto …</text>
+</svg>

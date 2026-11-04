@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 590" width="780" height="590" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <rect width="780" height="590" fill="#ffffff"/>
+
+  <!-- 1. Q K V -->
+  <text x="20" y="28" font-weight="bold" font-size="14">1. Z každého tokenu sa vyrobí Q, K, V – rovnakými maticami pre všetky tokeny</text>
+
+  <rect x="30" y="50" width="70" height="110" rx="4" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="65" y="102" text-anchor="middle" font-weight="bold">X</text>
+  <text x="65" y="120" text-anchor="middle" font-size="11">n × 4096</text>
+  <text x="115" y="110" text-anchor="middle" font-size="18">×</text>
+  <rect x="130" y="60" width="90" height="90" rx="4" fill="#fde7d4" stroke="#e07a1f" stroke-width="1.5"/>
+  <text x="175" y="102" text-anchor="middle" font-weight="bold">W_Q</text>
+  <text x="175" y="120" text-anchor="middle" font-size="11">4096 × 4096</text>
+  <text x="237" y="110" text-anchor="middle" font-size="18">=</text>
+  <rect x="255" y="50" width="70" height="110" rx="4" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="290" y="102" text-anchor="middle" font-weight="bold">Q</text>
+  <text x="290" y="120" text-anchor="middle" font-size="11">n × 4096</text>
+
+  <text x="30" y="180" font-size="11" fill="#2563eb">n riadkov = n tokenov (mení sa podľa vstupu)</text>
+  <text x="130" y="197" font-size="11" fill="#c2410c">pevná veľkosť, nezávisí od n → učí sa</text>
+
+  <text x="360" y="75">rovnako: K = X · W_K,  V = X · W_V</text>
+  <text x="360" y="103"><tspan font-weight="bold">Q</tspan> (query) – „čo hľadám“</text>
+  <text x="360" y="125"><tspan font-weight="bold">K</tspan> (key) – „čo ponúkam“, podľa čoho ma nájdu</text>
+  <text x="360" y="147"><tspan font-weight="bold">V</tspan> (value) – „čo odovzdám“, keď ma niekto vyberie</text>
+
+  <!-- 2. matica -->
+  <text x="20" y="238" font-weight="bold" font-size="14">2. Skóre = Q · Kᵀ / √d → maska → softmax  (matica n × n)</text>
+  <text x="260" y="262" text-anchor="middle" font-size="11" fill="#555">kľúč (K): na koho sa pozerám →</text>
+  <text x="20" y="282" font-size="11" fill="#555">dotaz (Q) ↓</text>
+
+  <g text-anchor="middle" font-size="12">
+    <text x="170" y="282">Mačka</text>
+    <text x="230" y="282">sedí</text>
+    <text x="290" y="282">na</text>
+    <text x="350" y="282">stole</text>
+  </g>
+  <g text-anchor="end" font-size="12">
+    <text x="132" y="324">Mačka</text>
+    <text x="132" y="384">sedí</text>
+    <text x="132" y="444">na</text>
+    <text x="132" y="504">stole</text>
+  </g>
+
+  <!-- riadok 1 -->
+  <rect x="140" y="290" width="60" height="60" fill="#3b82f6" fill-opacity="1.0" stroke="#fff"/>
+  <rect x="200" y="290" width="60" height="60" fill="#d4d4d4" stroke="#fff"/>
+  <rect x="260" y="290" width="60" height="60" fill="#d4d4d4" stroke="#fff"/>
+  <rect x="320" y="290" width="60" height="60" fill="#d4d4d4" stroke="#fff"/>
+  <!-- riadok 2 -->
+  <rect x="140" y="350" width="60" height="60" fill="#3b82f6" fill-opacity="0.62" stroke="#fff"/>
+  <rect x="200" y="350" width="60" height="60" fill="#3b82f6" fill-opacity="0.38" stroke="#fff"/>
+  <rect x="260" y="350" width="60" height="60" fill="#d4d4d4" stroke="#fff"/>
+  <rect x="320" y="350" width="60" height="60" fill="#d4d4d4" stroke="#fff"/>
+  <!-- riadok 3 -->
+  <rect x="140" y="410" width="60" height="60" fill="#3b82f6" fill-opacity="0.15" stroke="#fff"/>
+  <rect x="200" y="410" width="60" height="60" fill="#3b82f6" fill-opacity="0.55" stroke="#fff"/>
+  <rect x="260" y="410" width="60" height="60" fill="#3b82f6" fill-opacity="0.30" stroke="#fff"/>
+  <rect x="320" y="410" width="60" height="60" fill="#d4d4d4" stroke="#fff"/>
+  <!-- riadok 4 -->
+  <rect x="140" y="470" width="60" height="60" fill="#3b82f6" fill-opacity="0.10" stroke="#fff"/>
+  <rect x="200" y="470" width="60" height="60" fill="#3b82f6" fill-opacity="0.35" stroke="#fff"/>
+  <rect x="260" y="470" width="60" height="60" fill="#3b82f6" fill-opacity="0.40" stroke="#fff"/>
+  <rect x="320" y="470" width="60" height="60" fill="#3b82f6" fill-opacity="0.15" stroke="#fff"/>
+
+  <g text-anchor="middle" font-size="13">
+    <text x="170" y="325" fill="#fff" font-weight="bold">1,00</text>
+    <text x="230" y="325" fill="#888">–</text><text x="290" y="325" fill="#888">–</text><text x="350" y="325" fill="#888">–</text>
+    <text x="170" y="385" fill="#fff">0,62</text><text x="230" y="385">0,38</text>
+    <text x="290" y="385" fill="#888">–</text><text x="350" y="385" fill="#888">–</text>
+    <text x="170" y="445">0,15</text><text x="230" y="445" fill="#fff" font-weight="bold">0,55</text><text x="290" y="445">0,30</text>
+    <text x="350" y="445" fill="#888">–</text>
+    <text x="170" y="505">0,10</text><text x="230" y="505">0,35</text><text x="290" y="505">0,40</text><text x="350" y="505">0,15</text>
+  </g>
+
+  <text x="410" y="300">• Riadok = jeden token a to, koľko pozornosti</text>
+  <text x="410" y="318">  venuje ostatným tokenom (súčet riadku = 1).</text>
+  <text x="410" y="346">• Sivé = kauzálna maska: token nevidí budúcnosť.</text>
+  <text x="410" y="374">• „na“ sa najviac pozerá na „sedí“ (0,55).</text>
+  <text x="410" y="402">• Matica má n × n prvkov: pre 4 tokeny 16,</text>
+  <text x="410" y="420">  pre 65 536 tokenov 4,3 miliardy.</text>
+  <text x="410" y="448" fill="#2563eb" font-weight="bold">• Tieto čísla NIE sú parametre modelu –</text>
+  <text x="410" y="466" fill="#2563eb" font-weight="bold">  vypočítajú sa nanovo pre každý vstup.</text>
+  <text x="410" y="494" font-size="11" fill="#777">(čísla sú ilustračné, 1 slovo = 1 token)</text>
+
+  <!-- 3. výstup -->
+  <text x="20" y="562" font-weight="bold" font-size="14">3. Výstup tokenu = vážený súčet vektorov V:</text>
+  <text x="20" y="582">„na“ = 0,15 · V(Mačka) + 0,55 · V(sedí) + 0,30 · V(na)   → potom W_O (učená) → ďalej do FFN</text>
+</svg>

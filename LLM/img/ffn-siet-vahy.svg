@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 520" width="820" height="520" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <marker id="ao" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e07a1f"/>
+    </marker>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="820" height="520" fill="#ffffff"/>
+  <text x="20" y="26" font-weight="bold" font-size="14">Feed-forward sieť 3 → 4 → 2: každá čiara je jedna váha (jedno naučené číslo)</text>
+  <line x1="112" y1="135.0" x2="248" y2="122.0" stroke="#e07a1f" stroke-width="3.2" stroke-opacity="1.00"/>
+  <line x1="112" y1="135.0" x2="248" y2="174.0" stroke="#2563eb" stroke-width="1.9" stroke-opacity="0.52"/>
+  <line x1="112" y1="135.0" x2="248" y2="226.0" stroke="#e07a1f" stroke-width="1.2" stroke-opacity="0.43"/>
+  <line x1="112" y1="135.0" x2="248" y2="278.0" stroke="#e07a1f" stroke-width="4.1" stroke-opacity="0.81"/>
+  <line x1="112" y1="200.0" x2="248" y2="122.0" stroke="#2563eb" stroke-width="2.2" stroke-opacity="1.00"/>
+  <line x1="112" y1="200.0" x2="248" y2="174.0" stroke="#e07a1f" stroke-width="3.5" stroke-opacity="0.72"/>
+  <line x1="112" y1="200.0" x2="248" y2="226.0" stroke="#2563eb" stroke-width="4.4" stroke-opacity="0.85"/>
+  <line x1="112" y1="200.0" x2="248" y2="278.0" stroke="#e07a1f" stroke-width="1.6" stroke-opacity="0.47"/>
+  <line x1="112" y1="265.0" x2="248" y2="122.0" stroke="#e07a1f" stroke-width="1.6" stroke-opacity="1.00"/>
+  <line x1="112" y1="265.0" x2="248" y2="174.0" stroke="#e07a1f" stroke-width="2.5" stroke-opacity="0.60"/>
+  <line x1="112" y1="265.0" x2="248" y2="226.0" stroke="#e07a1f" stroke-width="2.8" stroke-opacity="0.64"/>
+  <line x1="112" y1="265.0" x2="248" y2="278.0" stroke="#2563eb" stroke-width="3.5" stroke-opacity="0.72"/>
+  <line x1="292" y1="122.0" x2="428" y2="156.7" stroke="#e07a1f" stroke-width="3.8" stroke-opacity="0.77"/>
+  <line x1="292" y1="122.0" x2="428" y2="243.3" stroke="#2563eb" stroke-width="2.5" stroke-opacity="0.60"/>
+  <line x1="292" y1="174.0" x2="428" y2="156.7" stroke="#2563eb" stroke-width="3.2" stroke-opacity="0.68"/>
+  <line x1="292" y1="174.0" x2="428" y2="243.3" stroke="#e07a1f" stroke-width="1.9" stroke-opacity="0.52"/>
+  <line x1="292" y1="226.0" x2="428" y2="156.7" stroke="#e07a1f" stroke-width="2.2" stroke-opacity="0.56"/>
+  <line x1="292" y1="226.0" x2="428" y2="243.3" stroke="#e07a1f" stroke-width="4.4" stroke-opacity="0.85"/>
+  <line x1="292" y1="278.0" x2="428" y2="156.7" stroke="#2563eb" stroke-width="1.6" stroke-opacity="0.47"/>
+  <line x1="292" y1="278.0" x2="428" y2="243.3" stroke="#2563eb" stroke-width="3.8" stroke-opacity="0.77"/>
+  <rect x="166.8" y="116.8" width="40" height="18" rx="9" fill="#fff" stroke="#e07a1f"/>
+  <text x="186.8" y="130.8" text-anchor="middle" font-size="11" fill="#e07a1f">+0,8</text>
+  <rect x="166.8" y="146.1" width="40" height="18" rx="9" fill="#fff" stroke="#2563eb"/>
+  <text x="186.8" y="160.1" text-anchor="middle" font-size="11" fill="#2563eb">−0,5</text>
+  <rect x="166.8" y="175.3" width="40" height="18" rx="9" fill="#fff" stroke="#e07a1f"/>
+  <text x="186.8" y="189.3" text-anchor="middle" font-size="11" fill="#e07a1f">+0,3</text>
+  <circle cx="90" cy="135.0" r="22" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="90" y="140.0" text-anchor="middle" font-weight="bold">x<tspan dy="4" font-size="10">1</tspan></text>
+  <text x="58" y="140.0" text-anchor="end" fill="#2563eb">0,9</text>
+  <circle cx="90" cy="200.0" r="22" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="90" y="205.0" text-anchor="middle" font-weight="bold">x<tspan dy="4" font-size="10">2</tspan></text>
+  <text x="58" y="205.0" text-anchor="end" fill="#2563eb">0,2</text>
+  <circle cx="90" cy="265.0" r="22" fill="#dbeafe" stroke="#2563eb" stroke-width="1.2"/>
+  <text x="90" y="270.0" text-anchor="middle" font-weight="bold">x<tspan dy="4" font-size="10">3</tspan></text>
+  <text x="58" y="270.0" text-anchor="end" fill="#2563eb">0,6</text>
+  <circle cx="270" cy="122.0" r="22" fill="#f3f4f6" stroke="#e07a1f" stroke-width="2.5"/>
+  <text x="270" y="127.0" text-anchor="middle" font-weight="bold">h<tspan dy="4" font-size="10">1</tspan></text>
+  <circle cx="270" cy="174.0" r="22" fill="#f3f4f6" stroke="#999" stroke-width="1.2"/>
+  <text x="270" y="179.0" text-anchor="middle" font-weight="bold">h<tspan dy="4" font-size="10">2</tspan></text>
+  <circle cx="270" cy="226.0" r="22" fill="#f3f4f6" stroke="#999" stroke-width="1.2"/>
+  <text x="270" y="231.0" text-anchor="middle" font-weight="bold">h<tspan dy="4" font-size="10">3</tspan></text>
+  <circle cx="270" cy="278.0" r="22" fill="#f3f4f6" stroke="#999" stroke-width="1.2"/>
+  <text x="270" y="283.0" text-anchor="middle" font-weight="bold">h<tspan dy="4" font-size="10">4</tspan></text>
+  <circle cx="450" cy="156.7" r="22" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+  <text x="450" y="161.7" text-anchor="middle" font-weight="bold">y<tspan dy="4" font-size="10">1</tspan></text>
+  <circle cx="450" cy="243.3" r="22" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+  <text x="450" y="248.3" text-anchor="middle" font-weight="bold">y<tspan dy="4" font-size="10">2</tspan></text>
+  <text x="90" y="362" text-anchor="middle" font-weight="bold">vstupná vrstva</text>
+  <text x="90" y="378" text-anchor="middle" font-size="11" fill="#555">dáta (napr. pixely)</text>
+  <text x="270" y="362" text-anchor="middle" font-weight="bold">skrytá vrstva</text>
+  <text x="270" y="378" text-anchor="middle" font-size="11" fill="#555">+ aktivácia (ReLU)</text>
+  <text x="450" y="362" text-anchor="middle" font-weight="bold">výstupná vrstva</text>
+  <text x="450" y="378" text-anchor="middle" font-size="11" fill="#555">+ softmax</text>
+  <text x="98" y="58" font-size="12" fill="#c2410c">W<tspan dy="4" font-size="10">1</tspan><tspan dy="-4">: 3 × 4 = 12 váh + 4 biasy</tspan></text>
+  <text x="288" y="58" font-size="12" fill="#c2410c">W<tspan dy="4" font-size="10">2</tspan><tspan dy="-4">: 4 × 2 = 8 váh + 2 biasy</tspan></text>
+  <rect x="525" y="70" width="280" height="290" rx="8" fill="#fffaf5" stroke="#e07a1f" stroke-width="1.5"/>
+  <text x="539" y="94" font-weight="bold">Čo počíta jeden neurón (h<tspan dy="4" font-size="10">1</tspan><tspan dy="-4">)</tspan></text>
+  <text x="539" y="122" font-size="12" fill="#222" font-weight="bold">1. vážený súčet vstupov:</text>
+  <text x="539" y="141" font-size="12" fill="#222">z = x<tspan dy="4" font-size="10">1</tspan><tspan dy="-4">·w</tspan><tspan dy="4" font-size="10">1</tspan><tspan dy="-4"> + x</tspan><tspan dy="4" font-size="10">2</tspan><tspan dy="-4">·w</tspan><tspan dy="4" font-size="10">2</tspan><tspan dy="-4"> + x</tspan><tspan dy="4" font-size="10">3</tspan><tspan dy="-4">·w</tspan><tspan dy="4" font-size="10">3</tspan><tspan dy="-4"> + b</tspan></text>
+  <text x="539" y="160" font-size="12" fill="#555">   = 0,9·0,8 + 0,2·(−0,5) + 0,6·0,3 + 0,1</text>
+  <text x="539" y="179" font-size="12" fill="#555">   = 0,72 − 0,10 + 0,18 + 0,1 = 0,90</text>
+  <text x="539" y="217" font-size="12" fill="#222" font-weight="bold">2. aktivácia (nelinearita):</text>
+  <text x="539" y="236" font-size="12" fill="#222">h<tspan dy="4" font-size="10">1</tspan><tspan dy="-4"> = ReLU(z) = max(0; 0,90) = 0,90</tspan></text>
+  <text x="539" y="274" font-size="12" fill="#c2410c">Váhy w a bias b sa učia.</text>
+  <text x="539" y="293" font-size="12" fill="#e07a1f">Kladná váha = vstup neurón „budí“,</text>
+  <text x="539" y="312" font-size="12" fill="#2563eb">záporná váha = „tlmí“.</text>
+  <text x="539" y="331" font-size="12" fill="#555">Hrúbka čiary = veľkosť váhy.</text>
+  <line x1="20" y1="402" x2="800" y2="402" stroke="#ddd"/>
+  <text x="20" y="428" font-weight="bold">Celá vrstva naraz = jedno násobenie maticou</text>
+  <rect x="30" y="448" width="110" height="32" rx="4" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="85" y="469" text-anchor="middle">x  (1 × 3)</text>
+  <text x="155" y="470" text-anchor="middle" font-size="18">·</text>
+  <rect x="170" y="440" width="110" height="48" rx="4" fill="#fde7d4" stroke="#e07a1f" stroke-width="1.5"/>
+  <text x="189" y="469">W<tspan dy="4" font-size="10">1</tspan><tspan dy="-4">  (3 × 4)</tspan></text>
+  <text x="297" y="470" text-anchor="middle" font-size="18">+</text>
+  <rect x="314" y="448" width="80" height="32" rx="4" fill="#fde7d4" stroke="#e07a1f" stroke-width="1.5"/>
+  <text x="330" y="469">b<tspan dy="4" font-size="10">1</tspan><tspan dy="-4">  (4)</tspan></text>
+  <text x="412" y="470" text-anchor="middle" font-size="18">→</text>
+  <text x="470" y="469" text-anchor="middle">ReLU</text>
+  <text x="525" y="470" text-anchor="middle" font-size="18">→</text>
+  <rect x="545" y="448" width="110" height="32" rx="4" fill="#f3f4f6" stroke="#999"/>
+  <text x="600" y="469" text-anchor="middle">h  (1 × 4)</text>
+  <text x="30" y="505" font-size="12" fill="#555">Pre dávku 64 príkladov je x matica 64 × 3 a výpočet je stále jedno násobenie, presne to, v čom je GPU rýchle.</text>
+</svg>

@@ -1,0 +1,20 @@
+[project]
+name = "image-recognition"
+version = "0.1.0"
+description = "MNIST rozpoznavanie cislic - feed forward siet v numpy"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "pillow",
+    "pyqt5",
+]
+
+[tool.uv]
+package = false
+# uv-managed interpretery su blokovane group policy
+python-preference = "only-system"
+# novsie pyqt5-qt5 nemaju wheel pre Windows
+required-environments = [
+    "sys_platform == 'win32' and platform_machine == 'AMD64'",
+]

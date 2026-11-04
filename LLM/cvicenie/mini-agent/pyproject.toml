@@ -1,0 +1,14 @@
+[project]
+name = "mini-agent"
+version = "0.1.0"
+description = "Mini-agent: agentova slucka nad Claude API"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.70",
+    "truststore",
+]
+
+[tool.uv]
+package = false
+# uv-managed interpretery su blokovane group policy
+python-preference = "only-system"

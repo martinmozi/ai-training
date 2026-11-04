@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 300" width="780" height="300" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="780" height="300" fill="#ffffff"/>
+  <text x="20" y="24" font-weight="bold" font-size="14">Prečo reasoning pomáha: každý token = jeden prechod modelom = pevné množstvo výpočtu</text>
+
+  <!-- bez reasoningu -->
+  <text x="20" y="60" font-weight="bold">Bez reasoningu</text>
+  <rect x="20" y="72" width="170" height="34" rx="5" fill="#eeeeee" stroke="#999"/>
+  <text x="105" y="94" text-anchor="middle">17 × 24 = ?</text>
+  <line x1="190" y1="89" x2="220" y2="89" stroke="#555" marker-end="url(#a)"/>
+  <rect x="222" y="72" width="90" height="34" rx="5" fill="#fde7d4" stroke="#e07a1f"/>
+  <text x="267" y="94" text-anchor="middle" font-size="12">1 prechod</text>
+  <line x1="312" y1="89" x2="342" y2="89" stroke="#555" marker-end="url(#a)"/>
+  <rect x="344" y="72" width="70" height="34" rx="5" fill="#fef2f2" stroke="#dc2626"/>
+  <text x="379" y="94" text-anchor="middle" font-weight="bold" fill="#991b1b">418 ✗</text>
+  <text x="440" y="86" font-size="12" fill="#555">Celý výpočet sa musí zmestiť do 32 vrstiev</text>
+  <text x="440" y="102" font-size="12" fill="#555">jedného prechodu – na odhad to stačí, na výpočet nie.</text>
+
+  <!-- s reasoningom -->
+  <text x="20" y="150" font-weight="bold">S reasoningom</text>
+  <rect x="20" y="162" width="170" height="34" rx="5" fill="#eeeeee" stroke="#999"/>
+  <text x="105" y="184" text-anchor="middle">17 × 24 = ?</text>
+  <line x1="190" y1="179" x2="210" y2="179" stroke="#555" marker-end="url(#a)"/>
+  <rect x="212" y="162" width="120" height="34" rx="5" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="272" y="184" text-anchor="middle" font-size="12">17 × 20 = 340</text>
+  <line x1="332" y1="179" x2="352" y2="179" stroke="#555" marker-end="url(#a)"/>
+  <rect x="354" y="162" width="110" height="34" rx="5" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="409" y="184" text-anchor="middle" font-size="12">17 × 4 = 68</text>
+  <line x1="464" y1="179" x2="484" y2="179" stroke="#555" marker-end="url(#a)"/>
+  <rect x="486" y="162" width="130" height="34" rx="5" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="551" y="184" text-anchor="middle" font-size="12">340 + 68 = 408</text>
+  <line x1="616" y1="179" x2="636" y2="179" stroke="#555" marker-end="url(#a)"/>
+  <rect x="638" y="162" width="70" height="34" rx="5" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="673" y="184" text-anchor="middle" font-weight="bold" fill="#15803d">408 ✓</text>
+
+  <path d="M212,206 L212,214 L616,214 L616,206" fill="none" stroke="#3b82f6"/>
+  <text x="414" y="232" text-anchor="middle" font-size="12" fill="#2563eb">desiatky tokenov = desiatky prechodov modelom</text>
+  <text x="414" y="248" text-anchor="middle" font-size="12" fill="#2563eb">každý medzivýsledok je v kontexte a ďalšie tokeny naň vidia cez attention</text>
+
+  <text x="20" y="284" font-size="12" fill="#444">Reasoning = model si píše „poznámky na papier“. Viac tokenov znamená viac výpočtu a viac krokov za sebou.</text>
+</svg>

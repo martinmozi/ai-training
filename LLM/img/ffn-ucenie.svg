@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 450" width="820" height="450" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <marker id="ao" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e07a1f"/>
+    </marker>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <rect width="820" height="450" fill="#ffffff"/>
+  <text x="20" y="26" font-weight="bold" font-size="14">Jeden krok učenia: dopredu → chyba → späť → úprava váh, a znova</text>
+  <rect x="40" y="60" width="270" height="52" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="175" y="82" text-anchor="middle" font-weight="bold">1. dopredný priechod</text>
+  <text x="175" y="100" text-anchor="middle" font-size="12" fill="#444">x → vrstvy → predikcia</text>
+  <rect x="40" y="160" width="270" height="52" rx="6" fill="#f3f4f6" stroke="#999" stroke-width="1.5"/>
+  <text x="175" y="182" text-anchor="middle" font-weight="bold">2. chyba (loss)</text>
+  <text x="175" y="200" text-anchor="middle" font-size="12" fill="#444">ako ďaleko je predikcia od cieľa</text>
+  <rect x="40" y="260" width="270" height="52" rx="6" fill="#fde7d4" stroke="#e07a1f" stroke-width="1.5"/>
+  <text x="175" y="282" text-anchor="middle" font-weight="bold">3. spätné šírenie</text>
+  <text x="175" y="300" text-anchor="middle" font-size="12" fill="#444">gradient pre každú váhu</text>
+  <rect x="40" y="360" width="270" height="52" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="175" y="382" text-anchor="middle" font-weight="bold">4. krok optimalizátora</text>
+  <text x="175" y="400" text-anchor="middle" font-size="12" fill="#444">w ← w − η · gradient  (Adam)</text>
+  <line x1="175" y1="112" x2="175" y2="158" stroke="#555" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="175" y1="212" x2="175" y2="258" stroke="#555" stroke-width="1.5" marker-end="url(#a)"/>
+  <line x1="175" y1="312" x2="175" y2="358" stroke="#555" stroke-width="1.5" marker-end="url(#a)"/>
+  <path d="M310,386 L345,386 L345,86 L314,86" fill="none" stroke="#16a34a" stroke-width="1.8" marker-end="url(#a)"/>
+  <text x="352" y="230" font-size="12" fill="#16a34a">ďalšia</text>
+  <text x="352" y="245" font-size="12" fill="#16a34a">dávka</text>
+  <line x1="430" y1="360" x2="790" y2="360" stroke="#999" marker-end="url(#a)"/>
+  <line x1="430" y1="360" x2="430" y2="55" stroke="#999" marker-end="url(#a)"/>
+  <text x="790" y="378" text-anchor="end" font-size="12" fill="#555">hodnota jednej váhy w</text>
+  <text x="436" y="66" font-size="12" fill="#555">loss</text>
+  <polyline points="430.0,74.3 431.8,78.4 433.6,82.5 435.4,86.6 437.2,90.8 439.0,94.9 440.8,99.1 442.6,103.3 444.4,107.5 446.2,111.7 448.0,116.0 449.8,120.2 451.6,124.5 453.4,128.7 455.2,133.0 457.0,137.3 458.8,141.5 460.6,145.8 462.4,150.0 464.2,154.3 466.0,158.5 467.8,162.7 469.6,166.9 471.4,171.1 473.2,175.3 475.0,179.4 476.8,183.5 478.6,187.5 480.4,191.5 482.2,195.5 484.0,199.4 485.8,203.3 487.6,207.1 489.4,210.9 491.2,214.6 493.0,218.3 494.8,221.8 496.6,225.3 498.4,228.8 500.2,232.1 502.0,235.4 503.8,238.6 505.6,241.7 507.4,244.8 509.2,247.7 511.0,250.6 512.8,253.4 514.6,256.1 516.4,258.7 518.2,261.2 520.0,263.6 521.8,265.9 523.6,268.1 525.4,270.2 527.2,272.3 529.0,274.2 530.8,276.1 532.6,277.8 534.4,279.5 536.2,281.1 538.0,282.6 539.8,284.0 541.6,285.3 543.4,286.6 545.2,287.8 547.0,288.9 548.8,289.9 550.6,290.8 552.4,291.7 554.2,292.5 556.0,293.3 557.8,294.0 559.6,294.6 561.4,295.2 563.2,295.8 565.0,296.3 566.8,296.7 568.6,297.2 570.4,297.6 572.2,297.9 574.0,298.2 575.8,298.6 577.6,298.8 579.4,299.1 581.2,299.4 583.0,299.6 584.8,299.8 586.6,300.1 588.4,300.3 590.2,300.5 592.0,300.8 593.8,301.0 595.6,301.3 597.4,301.5 599.2,301.8 601.0,302.1 602.8,302.4 604.6,302.7 606.4,303.0 608.2,303.3 610.0,303.7 611.8,304.1 613.6,304.5 615.4,304.9 617.2,305.3 619.0,305.7 620.8,306.2 622.6,306.7 624.4,307.2 626.2,307.6 628.0,308.2 629.8,308.7 631.6,309.2 633.4,309.7 635.2,310.2 637.0,310.7 638.8,311.2 640.6,311.7 642.4,312.2 644.2,312.7 646.0,313.2 647.8,313.6 649.6,314.0 651.4,314.4 653.2,314.8 655.0,315.1 656.8,315.4 658.6,315.7 660.4,315.9 662.2,316.0 664.0,316.1 665.8,316.2 667.6,316.2 669.4,316.1 671.2,315.9 673.0,315.7 674.8,315.5 676.6,315.1 678.4,314.7 680.2,314.2 682.0,313.6 683.8,312.9 685.6,312.2 687.4,311.4 689.2,310.4 691.0,309.4 692.8,308.3 694.6,307.1 696.4,305.8 698.2,304.4 700.0,303.0 701.8,301.4 703.6,299.7 705.4,298.0 707.2,296.1 709.0,294.2 710.8,292.2 712.6,290.0 714.4,287.8 716.2,285.5 718.0,283.2 719.8,280.7 721.6,278.2 723.4,275.6 725.2,272.9 727.0,270.1 728.8,267.3 730.6,264.4 732.4,261.4 734.2,258.4 736.0,255.3 737.8,252.2 739.6,249.0 741.4,245.8 743.2,242.5 745.0,239.2 746.8,235.9 748.6,232.5 750.4,229.1 752.2,225.7 754.0,222.2 755.8,218.8 757.6,215.3 759.4,211.8 761.2,208.3 763.0,204.8 764.8,201.3 766.6,197.7 768.4,194.2 770.2,190.7 772.0,187.2 773.8,183.7 775.6,180.2 777.4,176.8 779.2,173.3 781.0,169.9 782.8,166.4 784.6,163.0 786.4,159.6 788.2,156.3 790.0,152.9" fill="none" stroke="#333" stroke-width="2"/>
+  <line x1="765.2" y1="200.5" x2="673.7" y2="315.6" stroke="#e07a1f" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#ao)"/>
+  <line x1="673.7" y1="315.6" x2="666.8" y2="316.2" stroke="#e07a1f" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#ao)"/>
+  <line x1="666.8" y1="316.2" x2="666.4" y2="316.2" stroke="#e07a1f" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#ao)"/>
+  <line x1="666.4" y1="316.2" x2="666.4" y2="316.2" stroke="#e07a1f" stroke-width="1.8" stroke-dasharray="4 3" marker-end="url(#ao)"/>
+  <circle cx="765.2" cy="200.5" r="5" fill="#e07a1f"/>
+  <circle cx="673.7" cy="315.6" r="3.5" fill="#e07a1f"/>
+  <circle cx="666.8" cy="316.2" r="3.5" fill="#e07a1f"/>
+  <circle cx="666.4" cy="316.2" r="3.5" fill="#e07a1f"/>
+  <circle cx="666.4" cy="316.2" r="3.5" fill="#e07a1f"/>
+  <line x1="743.4" y1="243.0" x2="786.9" y2="158.1" stroke="#2563eb" stroke-width="2"/>
+  <text x="751.2" y="160.5" text-anchor="end" font-size="12" fill="#2563eb">sklon = gradient</text>
+  <text x="751.2" y="175.5" text-anchor="end" font-size="12" fill="#2563eb">(kladný → choď doľava)</text>
+  <text x="765.2" y="222.5" text-anchor="middle" font-size="11" fill="#e07a1f">štart</text>
+  <text x="666.4" y="338.2" text-anchor="middle" font-size="11" fill="#16a34a">minimum</text>
+  <text x="430" y="400" font-size="12" fill="#444">Gradient ukazuje, ktorým smerom loss rastie.</text>
+  <text x="430" y="416" font-size="12" fill="#444">Váha sa posunie opačným smerom o kúsok úmerný</text>
+  <text x="430" y="432" font-size="12" fill="#444">learning rate η. V sieti sa to deje naraz pre všetky váhy.</text>
+</svg>

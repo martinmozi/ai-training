@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" width="780" height="340" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <rect width="780" height="340" fill="#ffffff"/>
+  <text x="20" y="24" font-weight="bold" font-size="14">Kontextové okno = všetko, čo model pri jednom výpočte vidí</text>
+
+  <!-- zátvorka okna -->
+  <text x="450" y="48" text-anchor="middle" font-size="12">kontextové okno (OLMo 2: 4 096 tokenov, OLMo 3: 65 536 tokenov)</text>
+  <path d="M140,62 L140,55 L760,55 L760,62" fill="none" stroke="#333" stroke-width="1.5"/>
+
+  <!-- mimo okna -->
+  <rect x="20" y="66" width="110" height="40" rx="4" fill="#f3f4f6" stroke="#bbb" stroke-dasharray="4 3"/>
+  <text x="75" y="91" text-anchor="middle" fill="#999">staršie správy</text>
+  <text x="75" y="124" text-anchor="middle" font-size="11" fill="#999">mimo okna –</text>
+  <text x="75" y="138" text-anchor="middle" font-size="11" fill="#999">model to nevidí</text>
+
+  <!-- segmenty -->
+  <rect x="140" y="66" width="120" height="40" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="200" y="91" text-anchor="middle">systémový prompt</text>
+  <rect x="260" y="66" width="170" height="40" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="345" y="91" text-anchor="middle">história konverzácie</text>
+  <rect x="430" y="66" width="150" height="40" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="505" y="91" text-anchor="middle">priložený dokument</text>
+  <rect x="580" y="66" width="80" height="40" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="620" y="91" text-anchor="middle">otázka</text>
+  <rect x="660" y="66" width="100" height="40" fill="#fde7d4" stroke="#e07a1f" stroke-dasharray="5 3"/>
+  <text x="710" y="91" text-anchor="middle">odpoveď →</text>
+  <text x="710" y="124" text-anchor="middle" font-size="11" fill="#555">aj generovaný text</text>
+  <text x="710" y="138" text-anchor="middle" font-size="11" fill="#555">zaberá miesto v okne</text>
+
+  <!-- grafy -->
+  <text x="40" y="178" font-weight="bold">Pamäť (KV cache) rastie lineárne ~ n</text>
+  <line x1="60" y1="300" x2="340" y2="300" stroke="#333"/>
+  <line x1="60" y1="300" x2="60" y2="190" stroke="#333"/>
+  <line x1="60" y1="300" x2="340" y2="200" stroke="#3b82f6" stroke-width="2.5"/>
+  <text x="200" y="320" text-anchor="middle" font-size="11" fill="#555">počet tokenov n</text>
+  <text x="70" y="205" font-size="11" fill="#555">OLMo 2 7B: ~0,5 MB na token</text>
+  <text x="70" y="220" font-size="11" fill="#555">4 096 tokenov ≈ 2 GB</text>
+
+  <text x="440" y="178" font-weight="bold">Výpočet attention rastie kvadraticky ~ n²</text>
+  <line x1="460" y1="300" x2="740" y2="300" stroke="#333"/>
+  <line x1="460" y1="300" x2="460" y2="190" stroke="#333"/>
+  <path d="M460,300 Q600,300 740,195" fill="none" stroke="#e07a1f" stroke-width="2.5"/>
+  <text x="600" y="320" text-anchor="middle" font-size="11" fill="#555">počet tokenov n</text>
+  <text x="470" y="205" font-size="11" fill="#555">2× dlhší text → 4× viac</text>
+  <text x="470" y="220" font-size="11" fill="#555">výpočtu v attention</text>
+</svg>

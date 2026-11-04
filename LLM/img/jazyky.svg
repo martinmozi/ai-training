@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 330" width="780" height="330" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="780" height="330" fill="#ffffff"/>
+  <text x="20" y="24" font-weight="bold" font-size="14">Jazyky v modeli: pojmy sú spoločné, jazyk je hlavne na vstupe a výstupe</text>
+
+  <!-- stĺpce vrstiev -->
+  <text x="110" y="54" text-anchor="middle" font-size="12" fill="#555">prvé vrstvy</text>
+  <text x="390" y="54" text-anchor="middle" font-size="12" fill="#555">stredné vrstvy</text>
+  <text x="670" y="54" text-anchor="middle" font-size="12" fill="#555">posledné vrstvy</text>
+
+  <rect x="40" y="70" width="140" height="34" rx="5" fill="#dbeafe" stroke="#3b82f6"/>
+  <rect x="40" y="125" width="140" height="34" rx="5" fill="#dcfce7" stroke="#16a34a"/>
+  <rect x="40" y="180" width="140" height="34" rx="5" fill="#fef9c3" stroke="#ca8a04"/>
+  <g text-anchor="middle">
+    <text x="110" y="92">„cat“ (EN)</text>
+    <text x="110" y="147">„mačka“ (SK)</text>
+    <text x="110" y="202">„Katze“ (DE)</text>
+  </g>
+
+  <g stroke="#555" marker-end="url(#a)">
+    <line x1="180" y1="87" x2="278" y2="128"/>
+    <line x1="180" y1="142" x2="278" y2="142"/>
+    <line x1="180" y1="197" x2="278" y2="156"/>
+  </g>
+
+  <ellipse cx="390" cy="142" rx="110" ry="58" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="390" y="128" text-anchor="middle" font-weight="bold">pojem MAČKA</text>
+  <text x="390" y="148" text-anchor="middle" font-size="12">zviera, domáce, mňau,</text>
+  <text x="390" y="164" text-anchor="middle" font-size="12">mláďa = mača …</text>
+
+  <line x1="500" y1="142" x2="598" y2="142" stroke="#555" marker-end="url(#a)"/>
+  <rect x="600" y="118" width="140" height="48" rx="5" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="670" y="138" text-anchor="middle">výstup v jazyku</text>
+  <text x="670" y="156" text-anchor="middle">rozhovoru (SK)</text>
+
+  <text x="20" y="252">• Vedomosť, ktorú sa model naučil z anglických textov, sa dá použiť aj po slovensky – pojem je ten istý.</text>
+  <text x="20" y="274">• Čím väčší model, tým väčšia časť vnútorných reprezentácií je spoločná pre všetky jazyky.</text>
+  <text x="20" y="296">• Slovenčiny je v dátach málo (zlomky percenta), preto je model v nej slabší: horšia gramatika,</text>
+  <text x="20" y="314">  viac tokenov na slovo a menej „slovenských“ vedomostí.</text>
+</svg>

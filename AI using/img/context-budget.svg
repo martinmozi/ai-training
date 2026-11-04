@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13">
+  <style>
+    .title { font-size:20px; font-weight:600; fill:#0f172a; }
+    .lbl { fill:#0f172a; }
+    .small { font-size:12px; fill:#334155; }
+    .w { fill:#ffffff; font-size:12px; font-weight:600; }
+  </style>
+  <text x="450" y="32" text-anchor="middle" class="title">Kontextové okno ako rozpočet (ilustratívne, 200k tokenov)</text>
+
+  <!-- bar: 800px = 200k -->
+  <g transform="translate(50,70)">
+    <rect x="0" y="0" width="800" height="50" fill="#e2e8f0" rx="6"/>
+    <rect x="0"   y="0" width="40"  height="50" fill="#334155"/>
+    <rect x="40"  y="0" width="60"  height="50" fill="#7c3aed"/>
+    <rect x="100" y="0" width="20"  height="50" fill="#0891b2"/>
+    <rect x="120" y="0" width="380" height="50" fill="#16a34a"/>
+    <rect x="500" y="0" width="140" height="50" fill="#f59e0b"/>
+    <rect x="640" y="0" width="160" height="50" fill="#cbd5e1"/>
+    <text x="20"  y="30" text-anchor="middle" class="w">sys</text>
+    <text x="70"  y="30" text-anchor="middle" class="w">tools/MCP</text>
+    <text x="110" y="30" text-anchor="middle" class="w">md</text>
+    <text x="310" y="30" text-anchor="middle" class="w">história: čítania súborov, výstupy príkazov, diffy</text>
+    <text x="570" y="30" text-anchor="middle" class="w">aktuálna úloha</text>
+    <text x="720" y="30" text-anchor="middle" fill="#334155" font-size="12">voľné + buffer</text>
+
+    <!-- legend -->
+    <text x="0" y="75" class="small">sys = systémový prompt · tools/MCP = definície nástrojov · md = CLAUDE.md / AGENTS.md / skills metadáta</text>
+
+    <!-- auto compact marker -->
+    <line x1="640" y1="-12" x2="640" y2="62" stroke="#dc2626" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="640" y="-18" text-anchor="middle" fill="#dc2626" font-size="12">≈ hranica auto-kompakcie</text>
+  </g>
+
+  <!-- quality curve -->
+  <g transform="translate(50,175)">
+    <text x="0" y="0" class="lbl" font-weight="600">Kvalita pozornosti vs. zaplnenie (context rot – kvalitatívne)</text>
+    <line x1="0" y1="130" x2="800" y2="130" stroke="#475569"/>
+    <line x1="0" y1="20" x2="0" y2="130" stroke="#475569"/>
+    <path d="M0,30 C250,32 400,45 520,70 C620,92 700,110 800,122" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+    <text x="10" y="45" class="small">presné vyhľadanie detailov</text>
+    <text x="560" y="72" class="small">„stratené v strede“, zabúdanie inštrukcií,</text>
+    <text x="560" y="88" class="small">opakovanie starých chýb</text>
+    <text x="800" y="148" text-anchor="end" class="small">zaplnenie okna →</text>
+  </g>
+</svg>

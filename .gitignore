@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+/LLM/cvicenie/mini-agent/uv.lock
+/LLM/cvicenie/image-recognition/uv.lock

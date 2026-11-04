@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="300" viewBox="0 0 720 300" font-family="Segoe UI, Arial, sans-serif">
+  <rect width="720" height="300" fill="#ffffff"/>
+  <text x="24" y="36" font-size="20" font-weight="bold" fill="#222">Gradient softmax + cross-entropy</text>
+
+  <g font-family="Cambria Math, Times New Roman, serif" font-size="28" fill="#222">
+    <text x="58" y="82">∂</text><text x="76" y="82" font-style="italic">L</text>
+    <line x1="54" y1="94" x2="104" y2="94" stroke="#222" stroke-width="2"/>
+    <text x="56" y="126">∂</text><text x="74" y="126" font-style="italic">z</text>
+    <text x="88" y="134" font-size="16" font-style="italic">i</text>
+    <text x="118" y="104">=</text>
+    <text x="150" y="104" font-style="italic">p</text><text x="166" y="112" font-size="16" font-style="italic">i</text>
+    <text x="182" y="104">−</text>
+    <text x="208" y="104" font-style="italic">t</text><text x="218" y="112" font-size="16" font-style="italic">i</text>
+  </g>
+  <g font-size="14" fill="#555">
+    <text x="270" y="82"><tspan font-style="italic">t</tspan> … one-hot cieľ: 1 pre správnu triedu, inak 0</text>
+    <text x="270" y="104">„predikcia − skutočnosť“</text>
+    <text x="270" y="126">v kóde: d_logits = probs; d_logits[y] −= 1</text>
+  </g>
+
+  <g font-size="14" fill="#222">
+    <text x="40" y="180" font-weight="bold">trieda</text>
+    <text x="130" y="180" font-weight="bold">p</text>
+    <text x="230" y="172" font-weight="bold">správne = „0“</text>
+    <text x="230" y="190" fill="#555">t = [1, 0, 0]</text>
+    <text x="460" y="172" font-weight="bold">správne = „1“</text>
+    <text x="460" y="190" fill="#555">t = [0, 1, 0]</text>
+    <line x1="36" y1="198" x2="684" y2="198" stroke="#ccc"/>
+
+    <text x="40" y="222">„0“</text><text x="130" y="222">0.844</text>
+    <text x="230" y="222" fill="#2f855a">−0.156  ↑ zdvihni</text>
+    <text x="460" y="222" fill="#c53030">+0.844  ↓ silno zníž</text>
+    <text x="40" y="246">„1“</text><text x="130" y="246">0.114</text>
+    <text x="230" y="246" fill="#c53030">+0.114  ↓ zníž</text>
+    <text x="460" y="246" fill="#2f855a">−0.886  ↑ silno zdvihni</text>
+    <text x="40" y="270">„2“</text><text x="130" y="270">0.042</text>
+    <text x="230" y="270" fill="#c53030">+0.042  ↓ zníž</text>
+    <text x="460" y="270" fill="#c53030">+0.042  ↓ zníž</text>
+  </g>
+  <text x="40" y="292" font-size="12" fill="#777">Gradient descent ide proti gradientu: záporný gradient → logit rastie, kladný → logit klesá.</text>
+</svg>

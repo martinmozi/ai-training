@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 470" width="780" height="470" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+  </defs>
+  <rect width="780" height="470" fill="#ffffff"/>
+  <text x="20" y="24" font-weight="bold" font-size="14">Ako vzniká výstupný token</text>
+
+  <!-- pipeline -->
+  <rect x="20" y="45" width="150" height="54" rx="6" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="95" y="68" text-anchor="middle">vektor posledného</text>
+  <text x="95" y="86" text-anchor="middle">tokenu h (4096)</text>
+  <line x1="170" y1="72" x2="196" y2="72" stroke="#555" marker-end="url(#a)"/>
+  <rect x="198" y="45" width="130" height="54" rx="6" fill="#fde7d4" stroke="#e07a1f" stroke-width="1.5"/>
+  <text x="263" y="68" text-anchor="middle" font-weight="bold">LM head</text>
+  <text x="263" y="86" text-anchor="middle" font-size="11">4096 × 100 352</text>
+  <line x1="328" y1="72" x2="354" y2="72" stroke="#555" marker-end="url(#a)"/>
+  <rect x="356" y="45" width="170" height="54" rx="6" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="441" y="68" text-anchor="middle">logity: 100 352 skóre</text>
+  <text x="441" y="86" text-anchor="middle" font-size="11">jedno pre každý token slovníka</text>
+  <line x1="526" y1="72" x2="552" y2="72" stroke="#555" marker-end="url(#a)"/>
+  <rect x="554" y="45" width="90" height="54" rx="6" fill="#eeeeee" stroke="#999"/>
+  <text x="599" y="68" text-anchor="middle">÷ teplota</text>
+  <text x="599" y="86" text-anchor="middle" font-weight="bold">T</text>
+  <line x1="644" y1="72" x2="668" y2="72" stroke="#555" marker-end="url(#a)"/>
+  <rect x="670" y="45" width="90" height="54" rx="6" fill="#eeeeee" stroke="#999"/>
+  <text x="715" y="77" text-anchor="middle">softmax</text>
+
+  <text x="20" y="135" font-size="12" fill="#555">Pravdepodobnosti 5 najlepších kandidátov po „Mačka sedí na …“ pri rôznej teplote (ilustračné čísla):</text>
+
+  <!-- panel T=0.2 -->
+  <text x="30" y="168" font-weight="bold">T = 0,2</text><text x="92" y="168" font-size="11" fill="#555">takmer vždy „stole“</text>
+  <line x1="30" y1="320" x2="250" y2="320" stroke="#333"/>
+  <g fill="#3b82f6">
+    <rect x="40" y="193" width="30" height="127"/>
+    <rect x="84" y="317" width="30" height="3"/>
+    <rect x="128" y="320" width="30" height="0"/>
+    <rect x="172" y="320" width="30" height="0"/>
+    <rect x="216" y="320" width="30" height="0"/>
+  </g>
+  <g text-anchor="middle" font-size="11">
+    <text x="55" y="189">98 %</text><text x="99" y="313">2 %</text><text x="143" y="316">0 %</text><text x="187" y="316">0 %</text><text x="231" y="316">0 %</text>
+  </g>
+
+  <!-- panel T=1.0 -->
+  <text x="285" y="168" font-weight="bold">T = 1,0</text><text x="347" y="168" font-size="11" fill="#555">pôvodné rozdelenie</text>
+  <line x1="285" y1="320" x2="505" y2="320" stroke="#333"/>
+  <g fill="#3b82f6">
+    <rect x="295" y="251" width="30" height="69"/>
+    <rect x="339" y="289" width="30" height="31"/>
+    <rect x="383" y="303" width="30" height="17"/>
+    <rect x="427" y="311" width="30" height="9"/>
+    <rect x="471" y="316" width="30" height="4"/>
+  </g>
+  <g text-anchor="middle" font-size="11">
+    <text x="310" y="247">53 %</text><text x="354" y="285">24 %</text><text x="398" y="299">13 %</text><text x="442" y="307">7 %</text><text x="486" y="312">3 %</text>
+  </g>
+
+  <!-- panel T=1.5 -->
+  <text x="540" y="168" font-weight="bold">T = 1,5</text><text x="602" y="168" font-size="11" fill="#555">viac náhody</text>
+  <line x1="540" y1="320" x2="760" y2="320" stroke="#333"/>
+  <g fill="#3b82f6">
+    <rect x="550" y="265" width="30" height="55"/>
+    <rect x="594" y="289" width="30" height="31"/>
+    <rect x="638" y="299" width="30" height="21"/>
+    <rect x="682" y="306" width="30" height="14"/>
+    <rect x="726" y="312" width="30" height="8"/>
+  </g>
+  <g text-anchor="middle" font-size="11">
+    <text x="565" y="261">42 %</text><text x="609" y="285">24 %</text><text x="653" y="295">16 %</text><text x="697" y="302">11 %</text><text x="741" y="308">6 %</text>
+  </g>
+
+  <!-- popisy kandidátov -->
+  <g text-anchor="middle" font-size="11" fill="#333">
+    <text x="55" y="336">stole</text><text x="99" y="336">zemi</text><text x="143" y="336">gauči</text><text x="187" y="336">okne</text><text x="231" y="336">streche</text>
+    <text x="310" y="336">stole</text><text x="354" y="336">zemi</text><text x="398" y="336">gauči</text><text x="442" y="336">okne</text><text x="486" y="336">streche</text>
+    <text x="565" y="336">stole</text><text x="609" y="336">zemi</text><text x="653" y="336">gauči</text><text x="697" y="336">okne</text><text x="741" y="336">streche</text>
+  </g>
+
+  <!-- losovanie a slučka -->
+  <rect x="20" y="365" width="300" height="40" rx="6" fill="#fef9c3" stroke="#ca8a04"/>
+  <text x="170" y="390" text-anchor="middle">losovanie podľa pravdepodobností</text>
+  <line x1="320" y1="385" x2="350" y2="385" stroke="#555" marker-end="url(#a)"/>
+  <rect x="352" y="365" width="110" height="40" rx="6" fill="#dbeafe" stroke="#3b82f6"/>
+  <text x="407" y="390" text-anchor="middle" font-weight="bold">„stole“</text>
+  <line x1="462" y1="385" x2="492" y2="385" stroke="#555" marker-end="url(#a)"/>
+  <text x="500" y="381">pridá sa na koniec vstupu</text>
+  <text x="500" y="398">a celé sa opakuje pre ďalší token</text>
+
+  <text x="20" y="440" font-size="12" fill="#444">Teplota mení iba tvar rozdelenia: nízka zvýrazní favorita, vysoká dá šancu aj menej pravdepodobným tokenom.</text>
+  <text x="20" y="458" font-size="12" fill="#444">Ďalšie filtre: top-k (losuje sa len z k najlepších), top-p (len z najlepších, ktoré spolu dávajú p, napr. 90 %).</text>
+</svg>

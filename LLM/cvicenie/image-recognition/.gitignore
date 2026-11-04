@@ -1,0 +1,5 @@
+*.npy
+*.png
+mnist
+*_schema.svg
+.venv

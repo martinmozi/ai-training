@@ -1,0 +1,4 @@
+pracovny/
+*.json
+__pycache__/
+.venv
