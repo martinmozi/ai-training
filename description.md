@@ -1,32 +1,32 @@
-# Training Description
+# Popis školenia
 
-The training has two connected parts:
+Školenie má dve nadväzujúce časti:
 
-## 1. How Large Language Models (LLMs) Work
+## 1. Ako fungujú veľké jazykové modely (LLM)
 
-Explains what happens inside a model, so it is clear what tools like Claude Code and GitHub Copilot actually do. It covers neural networks and how they learn, the transformer architecture (tokens, attention, context window, KV cache), and training and inference (temperature, instruct tuning, reasoning). It then looks at the limits of AI, such as hallucinations and prompt injection, and ends with the path from model to agent: tool calling, the agent loop, RAG and evals.
+Vysvetľuje, čo sa deje vnútri modelu, aby bolo jasné, čo nástroje ako Claude Code a GitHub Copilot naozaj robia. Prechádza neurónové siete a to, ako sa učia, architektúru transformer (tokeny, attention, kontextové okno, KV cache) a tréning a inferenciu (teplota, instruct tréning, reasoning). Potom sa venuje hraniciam AI, ako sú halucinácie a prompt injection, a končí cestou od modelu k agentovi: volanie nástrojov, agentová slučka, RAG a evaly.
 
-**Exercises:** a custom neural network for digit recognition (MNIST) and a simple coding agent built on the Claude API.
+**Cvičenia:** vlastná neurónová sieť na rozpoznávanie číslic (MNIST) a jednoduchý coding agent postavený na Claude API.
 
-## 2. AI Coding Agents in Practice
+## 2. AI coding agenti v praxi
 
-For developers who want to become power users of Claude Code: get changes from the agent they can trust, know what it costs, and control what the agent is allowed to do. Topics:
+Pre vývojárov, ktorí chcú Claude Code ovládať naplno: dostať od agenta zmeny, ktorým sa dá veriť, vedieť, koľko to stojí, a mať pod kontrolou, čo agent smie robiť. Témy:
 
-- working with context and its cost
-- building blocks: MCP, subagents, hooks, skills, plugins
-- security: permissions, sandbox, prompt injection
-- workflow: verification, debugging, worktrees, CI, and when not to use an agent
+- práca s kontextom a jeho cena
+- building blocks: MCP, subagenti, hooky, skills, pluginy
+- bezpečnosť: povolenia, sandbox, prompt injection
+- postup práce: overovanie, debugovanie, worktrees, CI a kedy agenta nepoužiť
 
-**Exercises:** done on a small invoicing app with real tickets (bugs and a feature). Includes a ready-to-copy configuration and a cheat sheet.
+**Cvičenia:** na malej aplikácii na faktúry so skutočnými ticketmi (bugy a jedna nová funkcia). Súčasťou je hotová konfigurácia na skopírovanie a ťahák.
 
-**Prerequisites:** programming basics, git and the command line.
+**Predpoklady:** základy programovania, git a príkazový riadok.
 
-## Required Setup
+## Potrebná príprava
 
-Please prepare before the training:
+Pred školením si prosím priprav:
 
-- **Python 3.12+** with packages `numpy`, `matplotlib`, `pillow`, `pyqt5`, `anthropic`, `truststore` and `pytest` (or `uv sync` in each exercise folder)
-- **mnist dataset** from https://www.kaggle.com/datasets/hojjatk/mnist-dataset
-- **Claude Code** installed and signed in with a company account (`claude --version` works)
-- **Claude API access** for the mini-agent exercise: an API key - company gateway
-- **jq**, which the hooks exercise uses (optional)
+- **Python 3.12+** s balíkmi `numpy`, `matplotlib`, `pillow`, `pyqt5`, `anthropic`, `truststore` a `pytest` (alebo `uv sync` v priečinku každého cvičenia)
+- **dataset mnist** z https://www.kaggle.com/datasets/hojjatk/mnist-dataset
+- **Claude Code** nainštalovaný a prihlásený firemným účtom (`claude --version` funguje)
+- **prístup ku Claude API** pre cvičenie s mini-agentom: API kľúč – firemná gateway
+- **jq**, ktorý používa cvičenie s hookmi (voliteľné)

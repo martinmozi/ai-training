@@ -1,11 +1,11 @@
-﻿# Prerequisites
+# Predpoklady
 
-What you should ideally know before the training:
+Čo by si mal(a) ideálne vedieť pred školením:
 
-- **Programming, git and the command line** – everyday work (commit, branch, diff), running shell commands, reading Python code.
-- **Working with an AI chatbot** – experience with ChatGPT / Claude / Copilot Chat: writing a prompt, adding context, iterating on the answer and critically checking it.
-- **Basic idea of LLMs** – a model generates text token by token, has a limited context window and can make things up (hallucinate).
-- **What agentic coding is** – the difference between a chat and an agent: the agent calls the model in a loop, the model requests **tools** (read/edit files, run commands, search), the agent executes them, returns the result to the model and repeats until the task is done.
-- **Claude Code or GitHub Copilot** – run it at least once and let it make a small code change.
+- **Programovanie, git a príkazový riadok** – bežná práca (commit, branch, diff), spúšťanie príkazov v shelli, čítanie kódu v Pythone.
+- **Práca s AI chatbotom** – skúsenosť s ChatGPT / Claude / Copilot Chat: napísať prompt, pridať kontext, iterovať nad odpoveďou a kriticky ju overiť.
+- **Základná predstava o LLM** – model generuje text token po tokene, má obmedzené kontextové okno a vie si vymýšľať (halucinovať).
+- **Čo je agentic coding** – rozdiel medzi chatom a agentom: agent volá model v slučke, model si vyžiada **nástroje** (čítanie/úprava súborov, spúšťanie príkazov, vyhľadávanie), agent ich vykoná, vráti výsledok modelu a opakuje to, kým nie je úloha hotová.
+- **Claude Code alebo GitHub Copilot** – aspoň raz ho spusti a nechaj ho urobiť malú zmenu v kóde.
 
-Technical setup (Python, Claude Code, API access) is in [`description.md`](description.md#required-setup).
+Technická príprava (Python, Claude Code, prístup k API) je v [`description.md`](description.md#potrebná-príprava).
